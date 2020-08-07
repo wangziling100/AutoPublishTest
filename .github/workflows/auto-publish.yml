@@ -16,7 +16,7 @@ jobs:
       - uses: wangziling100/AutoPublish@v1.0.0-alpha.18
         with:
           scope: '@wangziling100'
-          strict_error: true 
+          strict_error: false
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
           #GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
