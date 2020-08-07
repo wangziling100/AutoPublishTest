@@ -14,6 +14,8 @@ jobs:
           #always-auth: true
           #registry-url: https://registry.npmjs.org/
       - uses: wangziling100/AutoPublish@v1.0.0-alpha.16
+        with:
+          scope: '@wangziling100'
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
           #GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
