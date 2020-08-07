@@ -12,6 +12,6 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - uses: wangziling100/auto-publish@v1
+      - uses: wangziling100/AutoPublish@v1.0.0-alpha.1
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
