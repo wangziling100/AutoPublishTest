@@ -16,4 +16,5 @@ jobs:
       - uses: wangziling100/AutoPublish@v1.0.0-alpha.1
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
