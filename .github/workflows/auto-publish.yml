@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: 12
           #always-auth: true
-          registry-url: https://registry.npmjs.org/
+          #registry-url: https://registry.npmjs.org/
       - uses: wangziling100/AutoPublish@v1.0.0-alpha.2
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
