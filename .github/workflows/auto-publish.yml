@@ -15,3 +15,4 @@ jobs:
       - uses: wangziling100/AutoPublish@v1.0.0-alpha.1
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+
