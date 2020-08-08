@@ -13,7 +13,7 @@ jobs:
           node-version: 12
           #always-auth: true
           #registry-url: https://registry.npmjs.org/
-      - uses: wangziling100/AutoPublish@v1.0.0-alpha.20
+      - uses: wangziling100/AutoPublish@v1.0.0-alpha.21
         with:
           scope: '@wangziling100'
           strict_error: true
