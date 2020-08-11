@@ -1,0 +1,7 @@
+{
+    "actions": [
+        "echo process lint",
+        "echo process test",
+        "echo process build"
+    ]
+}
