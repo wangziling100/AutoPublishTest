@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: auto-ci
-      uses: wangziling100/AutoCI@v1.0.1
+      uses: wangziling100/AutoCI@v1.0.2
       with:
         configPath: ./.github/autoCI.config.json
         modulesDir: packages
