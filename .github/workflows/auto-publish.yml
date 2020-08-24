@@ -19,7 +19,7 @@ jobs:
           #modulesDir: packages
   publish:
     runs-on: ubuntu-latest
-    if: ${{needs.ci.outputs.info=='normal'}||{needs.ci.outputs.info=='publish'}}
+    if: ${{needs.ci.outputs.info=='normal' || needs.ci.outputs.info=='publish'}}
     needs: ci
     steps:
       - uses: actions/checkout@v2
