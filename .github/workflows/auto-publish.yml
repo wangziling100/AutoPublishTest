@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: auto-ci
         id: ci
-        uses: wangziling100/AutoCI@v1
+        uses: wangziling100/AutoCI@v1.0.8
         with:
           configPath: .github/autoci.config.json
           #modulesDir: packages
@@ -28,7 +28,7 @@ jobs:
           node-version: 12
           #always-auth: true
           #registry-url: https://registry.npmjs.org/
-      - uses: wangziling100/AutoPublish@v1
+      - uses: wangziling100/AutoPublish@v1.2
         with:
           scope: '@wangziling100'
           strict_error: false
