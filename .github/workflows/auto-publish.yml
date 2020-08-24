@@ -2,7 +2,6 @@ name: Node.js Auto Publish
 
 on:
   push
-
 jobs:
   ci:
     runs-on: ubuntu-latest
