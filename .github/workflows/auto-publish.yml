@@ -6,15 +6,21 @@ on:
 jobs:
   ci:
     runs-on: ubuntu-latest
+    outputs:
+      moduleDir: ${{ steps.ci.outputs.moduleDir}}
+      info: ${{ step.ci.outputs.info}}
     steps:
       - uses: actions/checkout@v2
       - name: auto-ci
-        uses: wangziling100/AutoCI@v1.0.4
+        id: ci
+        uses: wangziling100/AutoCI@v1.0.7
         with:
           configPath: .github/autoci.config.json
           #modulesDir: packages
   publish:
     runs-on: ubuntu-latest
+    if: ${{needs.ci.outputs.info=='normal'}}
+    if: ${{needs.ci.outputs.info=='publish'}}
     needs: ci
     steps:
       - uses: actions/checkout@v2
