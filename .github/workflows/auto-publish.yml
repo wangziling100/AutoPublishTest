@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       moduleDir: ${{ steps.ci.outputs.moduleDir}}
-      info: ${{ step.ci.outputs.info}}
+      info: ${{ steps.ci.outputs.info}}
     steps:
       - uses: actions/checkout@v2
       - name: auto-ci
